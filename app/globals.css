@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215 28% 17%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 28% 17%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 28% 17%;
+  --primary: 176 84% 32%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 215 28% 17%;
+  --muted: 210 40% 98%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 215 28% 17%;
+  --destructive: 0 84% 60%;
+  --border: 214 32% 91%;
+  --input: 210 40% 96%;
+  --ring: 176 84% 32%;
+  --radius: 0.875rem;
+  --font-sans: "Inter";
+  --font-serif: "Inter";
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #fafafa;
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans), ui-sans-serif, system-ui;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  @apply mx-auto max-w-7xl px-6 py-10;
+}
+
+.soft-panel {
+  @apply rounded-2xl border border-border bg-white shadow-sm;
+}
